@@ -1,0 +1,3 @@
+export enum PriceTableActions {
+  UPDATE_PRICE_FIELDS_IN_ITEMS = "UPDATE_PRICE_FIELDS_IN_ITEMS",
+}

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+@layer base {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  [data-theme="default"] {
+    --color-primary: red;
+    /* Theme variables goes here */
+  }
+
+  [data-theme="primary"] {
+    --color-primary: green;
+    /* Theme variables goes here */
+  }
+
+
+.theme-test {
+  color: var(--color-primary)
+}
+  /* Can setup multiple themes here */
+}
+
+.manage-pricing_table  td {
+  min-width: 8.125rem;
+}
+
+.manage-pricing_table tbody td {
+  height: 4.625rem
+}
+
+.manage-pricing_table  td > div {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: inherit;
+}
